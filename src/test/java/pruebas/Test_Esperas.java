@@ -23,7 +23,7 @@ public void test() {
 	espera=new WebDriverWait(driver,Duration.ofSeconds(20));
 	WebElement textArea = espera.until(ExpectedConditions.presenceOfElementLocated(By.id("search_query_top")));
 	textArea.sendKeys("valor");
-	
+	driver.quit();
 	//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 }
 }
